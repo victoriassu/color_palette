@@ -1,7 +1,7 @@
 import React from 'react';
+import { FiRotateCw } from "react-icons/fi";
 import useColorMainList from "../hooks/useColorMainList";
 import styled from '@emotion/styled';
-import { FiRotateCw } from "react-icons/fi";
 
 const ColorMainView = () => {
     const {
