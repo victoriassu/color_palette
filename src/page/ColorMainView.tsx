@@ -29,7 +29,7 @@ const ColorMainView = () => {
                 ))}
             </Content>
             {alertShow && (<>
-                <CompleteWrapper>
+                <CompleteWrapper color={textHex}>
                     <div>복사에 성공했습니다.</div>
                     <CopyText>{textHex}</CopyText>
                 </CompleteWrapper>
@@ -92,7 +92,7 @@ const ColorStyleName = styled.div`
     font-size: 30px;
 `;
 
-const CompleteWrapper = styled.div`
+const CompleteWrapper = styled.div<{color: string}>`
     content: '';
     position: fixed;
     top: 0;
@@ -105,8 +105,8 @@ const CompleteWrapper = styled.div`
     font-size: 30px;
     font-weight: bold;
     color: #ffffff;
-    background-color: black;
-    opacity: 0.7;
+    background-color: ${({ color}) => color ? color : 'black'};
+    opacity: 1;
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: infinite;
