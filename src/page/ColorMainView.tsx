@@ -107,10 +107,7 @@ const CompleteWrapper = styled.div<{color: string}>`
     color: #ffffff;
     background-color: ${({ color}) => color ? color : 'black'};
     opacity: 1;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: TextContainerAni 1.3s linear;
 `;
 
 const CopyText = styled.div`
