@@ -15,7 +15,6 @@ const ColorMainView = () => {
     return (
         <Root>
             <Header>
-                {/* div 들어가는 부분 main 새로고침 */}
                 <RefreshArea onClick={handleRefreshIndex}><FiRotateCw />  Refresh!!</RefreshArea>
             </Header>
 
