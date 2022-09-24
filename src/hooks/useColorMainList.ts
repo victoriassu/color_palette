@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ColorList from "../app/items/ColorList";
-import styled from "@emotion/styled";
 
 const useColorMainList = () => {
 
@@ -40,7 +39,6 @@ const useColorMainList = () => {
     };
 
     return {
-        colorIdx,
         textHex,
         alertShow,
         showColorList,

@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import useColorMainList from "../hooks/useColorMainList";
 import styled from '@emotion/styled';
 import { FiRotateCw } from "react-icons/fi";
 
 const ColorMainView = () => {
     const {
-        colorIdx,
         textHex,
         alertShow,
         showColorList,
